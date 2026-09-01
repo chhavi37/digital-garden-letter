@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Garden Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sky"></div>
+<div class="sun"></div>
+<div class="hill"></div>
+<div class="flower-field" id="flowerField"></div>
+<div id="butterflies"></div>
+
+<div class="app">
+  <div class="title-bar">
+    <h1>🌸 A Garden Letter 🌸</h1>
+    <p>Write something lovely, dress it up with blooms, and send it with love.</p>
+  </div>
+
+  <div class="workspace">
+    <aside class="panel">
+      <h3>Paper colour</h3>
+      <div class="swatches" id="paperSwatches"></div>
+
+      <h3>Handwriting style</h3>
+      <div class="font-options" id="fontOptions"></div>
+
+      <h3>Wax seal colour</h3>
+      <div class="swatches" id="sealSwatches"></div>
+
+      <h3>Stickers</h3>
+      <div class="sticker-grid" id="stickerGrid"></div>
+
+      <div class="panel-actions">
+        <button class="btn" id="downloadBtn">🌷 Save letter as image</button>
+        <button class="btn secondary" id="clearStickersBtn">Clear stickers</button>
+        <button class="btn secondary" id="resetBtn">Reset everything</button>
+      </div>
+    </aside>
+
+    <main class="letter-stage">
+      <div class="letter-wrap">
+        <div class="letter" id="letter">
+          <div class="seal" id="seal">🌿</div>
+          <div class="field to-field" id="toField" contenteditable="true" data-placeholder="Dear friend,"></div>
+          <div class="field message-field" id="messageField" contenteditable="true" data-placeholder="Let your words bloom here... write whatever your heart wants to share."></div>
+          <div class="field from-field" id="fromField" contenteditable="true" data-placeholder="With love, you"></div>
+          <div class="sticker-layer" id="stickerLayer"></div>
+        </div>
+      </div>
+      <p class="hint">Tap a sticker to add it, drag to move it, double-tap to remove it 🦋</p>
+    </main>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
